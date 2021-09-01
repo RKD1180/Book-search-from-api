@@ -16,7 +16,7 @@ const loadBook = () => {
   }
 
   // get response from server
-  const url = `http://openlibrary.org/search.json?q=${getSearchValue}`;
+  const url = `https://openlibrary.org/search.json?q=${getSearchValue}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayBook(data.docs));
